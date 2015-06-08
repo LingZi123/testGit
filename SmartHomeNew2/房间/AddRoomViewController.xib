@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRoomViewController">
+            <connections>
+                <outlet property="_loadingView" destination="lBo-yB-G2Z" id="gi3-gQ-cWf"/>
+                <outlet property="_roomButtonType" destination="j7x-pf-Ui3" id="ung-VQ-by3"/>
+                <outlet property="_roomImageView" destination="d9w-dP-csA" id="mfL-6e-hyR"/>
+                <outlet property="_roomNameTextField" destination="emJ-1P-gXW" id="3jR-bP-pE9"/>
+                <outlet property="_roomTypeLabel" destination="ZGR-tw-fZk" id="CPh-ad-2nf"/>
+                <outlet property="_roomTypePickerView" destination="ASY-hG-wC4" id="Tll-bM-UqN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="房间类型：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGR-tw-fZk">
+                    <rect key="frame" x="30" y="17" width="70" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="房间名称：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-ih-UQn">
+                    <rect key="frame" x="30" y="90" width="70" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="emJ-1P-gXW">
+                    <rect key="frame" x="120" y="90" width="129" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                    <connections>
+                        <action selector="roomNameEditDidEnd:" destination="-1" eventType="editingDidEnd" id="kbf-bO-qYN"/>
+                    </connections>
+                </textField>
+                <pickerView contentMode="top" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASY-hG-wC4">
+                    <rect key="frame" x="120" y="55" width="130" height="162"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="1Z2-UV-4hf"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="P5g-jl-OWX"/>
+                        <outlet property="delegate" destination="-1" id="RxK-nd-oYT"/>
+                    </connections>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7x-pf-Ui3">
+                    <rect key="frame" x="119" y="15" width="130" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="请选择房间类型">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="_roomButtonClick:" destination="-1" eventType="touchUpInside" id="zpA-c9-BwA"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-dP-csA">
+                    <rect key="frame" x="255" y="5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="2eQ-xH-1Ml"/>
+                        <constraint firstAttribute="height" constant="50" id="eOI-4F-68g"/>
+                    </constraints>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lBo-yB-G2Z">
+                    <rect key="frame" x="150" y="106" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="d9w-dP-csA" secondAttribute="trailing" constant="15" id="3s3-D0-AAo"/>
+                <constraint firstAttribute="trailing" secondItem="j7x-pf-Ui3" secondAttribute="trailing" constant="71" id="5NG-KO-2xU"/>
+                <constraint firstItem="ASY-hG-wC4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="6tG-eV-j80"/>
+                <constraint firstItem="emJ-1P-gXW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="120" id="B9J-TR-LSa"/>
+                <constraint firstItem="lBo-yB-G2Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="106" id="KtX-8Q-qdY"/>
+                <constraint firstAttribute="trailing" secondItem="emJ-1P-gXW" secondAttribute="trailing" constant="71" id="Sg7-Rf-Qqf"/>
+                <constraint firstItem="j7x-pf-Ui3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="119" id="b9i-b2-67Y"/>
+                <constraint firstAttribute="centerX" secondItem="lBo-yB-G2Z" secondAttribute="centerX" id="bfP-es-swE"/>
+                <constraint firstItem="emJ-1P-gXW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="ibH-bt-hrA"/>
+                <constraint firstItem="ZGR-tw-fZk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="17" id="knR-I8-q2y"/>
+                <constraint firstItem="d9w-dP-csA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="l9S-9F-nvU"/>
+                <constraint firstAttribute="trailing" secondItem="ASY-hG-wC4" secondAttribute="trailing" constant="70" id="oVa-uh-WxH"/>
+                <constraint firstItem="BtH-ih-UQn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="plZ-6A-fhS"/>
+                <constraint firstItem="ASY-hG-wC4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="120" id="rMS-jy-z4K"/>
+                <constraint firstItem="j7x-pf-Ui3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="rTv-KB-LPw"/>
+                <constraint firstItem="BtH-ih-UQn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="rV1-a3-VqE"/>
+                <constraint firstItem="ZGR-tw-fZk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="th5-x7-qN7"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="207" y="278"/>
+        </view>
+    </objects>
+</document>

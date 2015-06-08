@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="App_help" representedClassName="App_help" syncable="YES">
+        <attribute name="helpdec" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="helpid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="App_Version" syncable="YES">
+        <attribute name="apptype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oldversion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="upcache" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uptime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="verid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tl_apps_brand" syncable="YES"/>
+    <entity name="Tl_apps_code" syncable="YES"/>
+    <entity name="Tl_apps_type" syncable="YES"/>
+    <entity name="Tl_apps_ver" syncable="YES"/>
+    <entity name="Tl_customer_room" representedClassName="Tl_customer_room" syncable="YES">
+        <attribute name="addtime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="adduserid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="parentid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="roomname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roomtype" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uptime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="upuserid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Tl_cuttomer_back" syncable="YES"/>
+    <entity name="Tl_cuttomer_user" representedClassName="Tl_cuttomer_user" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addtime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imeinum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLogout" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isRemeberPwd" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lasttime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="loginip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="truename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userhead" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userjob" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usermail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userpass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userqq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usersex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usertel" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tl_logs_admin" syncable="YES"/>
+    <entity name="Tl_logs_lights" syncable="YES"/>
+    <entity name="Tl_logs_user" syncable="YES"/>
+    <entity name="Tl_room_type" representedClassName="Tl_room_type" syncable="YES">
+        <attribute name="roomimg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roomname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roomtypeid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tl_roomtoproduct_relation" syncable="YES"/>
+    <entity name="Tl_scene_model" syncable="YES"/>
+    <entity name="Tl_scene_shortcuts" syncable="YES"/>
+    <entity name="Tl_union_comeras" syncable="YES"/>
+    <entity name="Tl_union_company" syncable="YES"/>
+    <entity name="Tl_union_info" syncable="YES"/>
+    <entity name="Tl_union_lights" syncable="YES"/>
+    <entity name="Tl_union_serial" syncable="YES">
+        <attribute name="addtime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="compid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="productnum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="proid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="serialnum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortbrand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Tl_union_type" syncable="YES"/>
+    <elements>
+        <element name="App_help" positionX="0" positionY="45" width="128" height="90"/>
+        <element name="App_Version" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Tl_apps_brand" positionX="0" positionY="45" width="128" height="45"/>
+        <element name="Tl_apps_code" positionX="-9" positionY="36" width="128" height="45"/>
+        <element name="Tl_apps_type" positionX="36" positionY="81" width="128" height="45"/>
+        <element name="Tl_apps_ver" positionX="18" positionY="63" width="128" height="45"/>
+        <element name="Tl_customer_room" positionX="18" positionY="63" width="128" height="195"/>
+        <element name="Tl_cuttomer_back" positionX="9" positionY="54" width="128" height="45"/>
+        <element name="Tl_cuttomer_user" positionX="0" positionY="45" width="128" height="360"/>
+        <element name="Tl_logs_admin" positionX="9" positionY="54" width="128" height="45"/>
+        <element name="Tl_logs_lights" positionX="-9" positionY="36" width="128" height="45"/>
+        <element name="Tl_logs_user" positionX="-18" positionY="27" width="128" height="45"/>
+        <element name="Tl_room_type" positionX="27" positionY="72" width="128" height="105"/>
+        <element name="Tl_roomtoproduct_relation" positionX="36" positionY="81" width="128" height="45"/>
+        <element name="Tl_scene_model" positionX="45" positionY="90" width="128" height="45"/>
+        <element name="Tl_scene_shortcuts" positionX="36" positionY="81" width="128" height="45"/>
+        <element name="Tl_union_comeras" positionX="18" positionY="63" width="128" height="45"/>
+        <element name="Tl_union_company" positionX="-36" positionY="9" width="128" height="45"/>
+        <element name="Tl_union_info" positionX="45" positionY="90" width="128" height="45"/>
+        <element name="Tl_union_lights" positionX="27" positionY="72" width="128" height="45"/>
+        <element name="Tl_union_serial" positionX="-54" positionY="-9" width="128" height="178"/>
+        <element name="Tl_union_type" positionX="-9" positionY="36" width="128" height="45"/>
+    </elements>
+</model>
